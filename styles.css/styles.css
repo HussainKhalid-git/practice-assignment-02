@@ -1,0 +1,132 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+body{
+    background-color: aqua;
+} */
+
+/* font */
+.adlam-display-regular {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* body */
+body {
+    background: #FFFFFF;
+}
+
+
+header {
+    margin-bottom: 16px;
+}
+/* container */
+.container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 1600px;
+    margin: auto;
+     background:#FFF9F4 ;
+    padding: 16px; 8px ;
+}
+
+/* menu */
+.menu {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 24PX;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000 ;
+    font-size: 20px;
+    font-weight: 400PX;
+    align-items: center;
+}
+
+/* container image */
+.container img{
+    width: 48%;
+    max-width: 232px;
+}
+
+
+/* nav-right */
+.container .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.container .nav-right i {
+    font-size: 24px;
+    gap: 16px;
+   color:#111111 ;
+   cursor: pointer;
+}
+
+/* nav right btn */
+.btn-login {
+    border: 1px solid #FFDC26 ;
+    padding: 10px 30px ;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400px;
+    cursor: pointer;
+}
+
+.btn {
+    background:#FFDC26 ;
+    border: none;
+    border-radius: 8px ;
+    padding: 10px 30px;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400px; 
+    cursor: pointer;
+}
+
+/* banner section */
+
+.banner {
+        border: 2px solid firebrick;
+    background: url(../assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+width: 90%;
+max-width: 1320px;
+height: 749px;
+}
+
+.banner-text {
+    background-position: top;
+}
+
+.banner-text h1 {
+   font-size: 56px ;
+   font-weight: 400;
+   color: #000000;
+   margin-top: 24px;
+   margin-bottom: 16px ;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
