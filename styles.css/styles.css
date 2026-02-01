@@ -15,6 +15,38 @@ body{
   font-style: normal;
 }
 
+
+/* common style */
+
+.container {
+    border: 2px solid darkred;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.common-btn {
+    background: #FFDC26;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #111111;
+    border: none;
+    outline: none;
+    gap: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.side-title {
+    font-size: 36px;
+    color: #111111;
+    padding-top: 140px;
+    padding-bottom: 48px;
+}
+
+
 /* body */
 body {
     background: #FFFFFF;
@@ -22,158 +54,134 @@ body {
 
 
 header {
-    margin-bottom: 16px;
-}
-/* container */
-.container {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    width:100%;
-    max-width: 1600px;
-    margin: auto;
-     background:#FFF9F4 ;
-    padding: 16px; 8px ;
+    background: #FFF9F4;
 }
 
-/* menu */
-.menu {
-    
+.navbar {
     display: flex;
     justify-content: space-between;
-    gap: 24PX;
+    height: 100px;
+    align-items: center;
 }
 
-.menu a {
+.nav-items {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items a {
     text-decoration: none;
-    color: #000000 ;
-    font-size: 20px;
-    font-weight: 400PX;
-    align-items: center;
-}
-
-/* container image */
-.container img{
-    width: 48%;
-    max-width: 232px;
-}
-
-
-/* nav-right */
-.container .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.container .nav-right i {
-    font-size: 24px;
-    gap: 16px;
-   color:#111111 ;
-   cursor: pointer;
-}
-
-/* nav right btn */
-.btn-login {
-    border: 1px solid #FFDC26 ;
-    padding: 10px 30px ;
-    border-radius: 8px;
-    background: transparent;
-    font-size: 20px;
-    font-weight: 400px;
-    cursor: pointer;
-}
-
-.btn {
-    background:#FFDC26 ;
-    border: none;
-    border-radius: 8px ;
-    padding: 10px 30px;
     color: #111111;
     font-size: 20px;
-    font-weight: 400px; 
+    font-weight: 400px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+
+
+.nav-right .btn-login {
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #111111;
+    outline: none;
+    gap: 12px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s all;
+    background: transparent;
+    border: 1px solid #FFDC26;}
+
+
+
+.nav-right .btn-login:hover {
+        background: #FFDC26;
+    border: 1px solid transparent;
+    }
+  
+
+.common-btn:hover {
+        background: transparent;
+    border: 1px solid transparent;
 }
 
 /* banner section */
 
 .banner {
-        border: 2px solid firebrick;
+    padding-top: 76px;
+    height: 749px;
     background: url(../assets/banner.png);
-    background-repeat: no-repeat;
+    background-position: bottom right;
     background-size: contain;
-    background-position: bottom;
-width: 83%;
-max-width: 1320px;
-height: 749px;
+    background-repeat: no-repeat;
 }
 
-.banner-text {
-    background-position: top;
+.banner-content {
+    max-width: ;
+
 }
 
-.banner-text h1 {
-   font-size: 56px ;
-   font-weight: 400;
-   color: #000000;
-   margin-top: 24px;
-   margin-bottom: 16px ;
+.banner-content h1 {
+    font-size: 56px;
+    color: #000000;
 }
-
-.banner-text p {
-    font-size: 18px;
-    margin-bottom: 24px;
+.banner-content p {
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    padding-top: 16px;
+    padding-bottom: 24px;
 }
 
 
-/* catagories section */
+/* catagory */
 
-.catagories {
-    border: 2px dashed blue;
-    padding: 60px 0 ;
-    align-items: center;
-}
-
-.title h2 {
-    font-size: 36px;
-    margin-bottom: 48px ;
-}
-
-.catagory-grid {
-    width: 83%;
-    max-width: 1320px;
-    margin: auto;
+.category-card-main {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(6,1fr);
     gap: 24px;
+    padding-bottom: 126px;
 }
 
-.catagory-card {
+.category-card {
     background: #F9DF8A;
-    padding: 16px 8px;
+    width: 200px;
+    height: 254px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.box-icon {
-    width: 120px;
-    height: 120px;
+.category-img {
+    width: 104px;
+    height: 104px;
     background: #FFFFFF;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 24px;
 }
 
-
-.box-icon img {
-    width: 48px;
-    height: 48px;
+.category-card h5 {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    color: #000000;
 }
-
+.category-card p {
+    font-size: 16px;
+    color: #000000;
+}
 
 

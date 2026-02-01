@@ -21,18 +21,25 @@
 
 <body class=".adlam-display-regular">
 <!-- header -->
-    <header>
+    <header class="header">
 
-        <div class="container">
-            <!-- logo image -->
-            <img src="assets/logo.png" alt="">
+        <div class="navbar container">
 
+            <div class="logo">
+                <!-- logo image -->
+                <img src="assets/logo.png" alt="">
+            </div>
+            
             <!-- menu -->
-            <nav class="menu">
-                <a href="#">Find a pet</a>
-                <a href="#">Breeds</a>
-                <a href="#">Contact us</a>
+            <nav class>
+                <ul class="nav-items">
+                    <li><a href="#">Find a pet</a></li>
+                    <li><a href="#">Breeds</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
             </nav>
+
+
 <!-- nav right -->
             <div class="nav-right"> 
                 <!-- search icon -->
@@ -41,90 +48,64 @@
                   <i class="fa-regular fa-bell-slash"></i>
                 
                      <button class="btn-login">Login</button>
-                <button class="btn">Register
-                </button>
-                  
-               
+                <button class="common-btn">Register
+                </button>   
             </div>
 
         </div>
     </header>
 
     <!-- banner -->
-    <section class="banner">
 
-        <div class="banner-container">
-
-            <div class="banner-text">
-                <h1>Pamper Your Pet,<br> Because They Deserve <br>  the Bes</h1>
-                <p>Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
-
-                <button class="btn">Find a pet</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- catagories section -->
-     <section class="catagories">
-
-        <div class="title">
-            <h2>Browse By Categories</h2>
-        </div>
-
-        <div class="catagory-grid">
-
-            <div class="catagory-card">
-
-                <div class="box-icon">
-                                    <img src="assets/dog.png" alt="">
+    <main>
+        <section class="container">
+            <div class="banner">
+                <div class="banner-content">
+                    <h1>Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+                    <p>Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="common-btn">Find a pet</button>
                 </div>
+            </div>
+        </section>
 
-                <h5>Dog</h5>
-                <p>3 items</p>
-            </div>
-            <div class="catagory-card">
+        <section class="container">
+            <h2 class="side-title">Browse By Categories</h2>
 
-                <div class="box-icon">
-                                      <img src="assets/fish.png" alt="">
+            <div class="category-card-main">
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/dog.png" alt=""></div>
+                    <h5>Dog</h5>
+                    <p>3 items</p>
                 </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/fish.png" alt=""></div>
+                    <h5>Fish</h5>
+                    <p>3 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/cat.png" alt=""></div>
+                    <h5>Cat</h5>
+                    <p>3 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/birds.png" alt=""></div>
+                    <h5>Birds</h5>
+                    <p>3 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/small-pet.png" alt=""></div>
+                    <h5>Small Pet</h5>
+                    <p>3 items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-img"><img src="assets/rabit.png" alt=""></div>
+                    <h5>Rabit</h5>
+                    <p>3 items</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <h5>Fish</h5>
-                <p>3 items</p>
-            </div>
-            <div class="catagory-card">
-                <div class="box-icon">
-                                    <img src="assets/cat.png" alt="">
-                </div>
-                <h5>Cat</h5>
-                <p>3 items</p>
-            </div>
-            <div class="catagory-card">
-                <div class="box-icon">
-                                 <img src="assets/birds.png" alt="">
-                </div>
-       
-                <h5>Birds</h5>
-                <p>3 items</p>
-            </div>
-            <div class="catagory-card">
-                 <div class="box-icon">
-                               <img src="assets/small-pet.png" alt="">
-                </div>
-              
-                <h5>Small pet</h5>
-                <p>3 items</p>
-            </div>
-            <div class="catagory-card">
-                 <div class="box-icon">
-                                          <img src="assets/rabit.png" alt="">
-                </div>
-     
-                <h5>Rabit</h5>
-                <p>3 items</p>
-            </div>
-        </div>
-
-     </section>
 
 </body>
 </html>
