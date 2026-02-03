@@ -185,3 +185,26 @@ header {
 }
 
 
+/* trending products section */
+
+.trendy-products {
+    background:#FFF9F4 ;
+}
+
+
+.trendy-products-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 24px;
+    padding-bottom: 140px;
+}
+
+.product-left {
+    background: red;
+    grid-column: span 4;
+}
+
+.product-right {
+    background: green;
+    grid-column: span 8;
+}
